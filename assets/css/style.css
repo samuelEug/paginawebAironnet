@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: url('/assets/css/img/fundo.jpg');
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    font-size: 19px;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.quem-somos {
+    width: 85%;
+    margin: 50px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px ridge #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quem-somos h1 {
+    flex: 1;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    flex: 4;
+    font-size: 1em;
+    padding-right: 20px;
+    color: #000;
+    text-align: justify;
+    font-weight: initial;
+}
+
+#texto-servico,
+#texto-produtos,
+#texto-cliente,
+#texto-parceiro {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2em;
+}
+
+.servicos,
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-bottom: 100px;
+}
+
+.servicos > div,
+.produtos > div {
+    background-color: #d8b3b3;
+    padding: 20px;
+    border-radius: 20px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px ridge #000;
+}
+
+#centralizado {
+    color: #000;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+#botao-contato {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 10px 100px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#botao-contato:hover {
+    background-color: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.clientes > div {
+    background-color: #d8b3b3;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px ridge #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#link {
+    text-decoration: none;
+    color: #000;
+}
+
+.clientes h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.parceiros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.parceiros > div {
+    background-color: #d8b3b3;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px ridge #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.parceiros h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rodape > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.rodape h3 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
+
+.rodape p,
+.rodape a {
+    margin: 5px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.rodape .icon {
+    margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .menu {
+        padding: 10px 30px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+        padding: 8px 15px;
+    }
+
+    .quem-somos {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .quem-somos h1 {
+        font-size: 1.8em;
+    }
+
+    .quem-somos h2 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .servicos,
+    .produtos {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .servicos > div,
+    .produtos > div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .clientes,
+    .parceiros {
+        grid-template-columns: 1fr;
+    }
+
+    .clientes > div,
+    .parceiros > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .quem-somos {
+        margin: 20px;
+        width: 90%;
+    }
+
+    .servicos,
+    .produtos {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .servicos > div,
+    .produtos > div {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .clientes,
+    .parceiros {
+        width: 90%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rodape > div {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        padding: 10px 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .quem-somos {
+        margin: 10px;
+        width: 95%;
+    }
+
+    .quem-somos h1 {
+        font-size: 1.5em;
+    }
+
+    .quem-somos h2 {
+        font-size: 0.9em;
+    }
+
+    .servicos > div,
+    .produtos > div {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #botao-contato {
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+
+    .rodape h3 {
+        font-size: 1.5em;
+    }
+}
